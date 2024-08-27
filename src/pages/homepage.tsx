@@ -111,7 +111,7 @@ export default function HomePage() {
     <main className={styles.container}>
       <Navbar isUser={isUser} setIsUser={setIsUser} />
       <InventoryStats cardData={cardData} />
-      {data.length != 0 && (
+      {data.length !== 0 && (
         <Table
           isAdmin={!isUser}
           data={data}
